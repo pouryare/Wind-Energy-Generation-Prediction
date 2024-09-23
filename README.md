@@ -5,7 +5,7 @@ This project implements machine learning models to predict wind energy generatio
 ## Project Structure
 
 ```
-/root/Wind Energy Generation Prediction/
+Wind Energy Generation Prediction/
 ├── Prediction of Renewable Energy Generation.ipynb
 └── app
     ├── app.py
@@ -45,14 +45,14 @@ This project implements machine learning models to predict wind energy generatio
 
 ### Running the Web Application using Docker
 
-1. Build the Docker image:
+1. Pull the Docker image:
    ```
-   docker build -t wind-energy-prediction .
+   docker pull pouryare/wind-energy-prediction:latest
    ```
 
 2. Run the Docker container:
    ```
-   docker run -d -p 5000:5000 --name wind-energy-app wind-energy-prediction
+   docker run -d -p 5000:5000 --name wind-energy-app pouryare/wind-energy-prediction:latest
    ```
 
 3. Open a web browser and go to `http://localhost:5000` to use the prediction interface.
